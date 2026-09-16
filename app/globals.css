@@ -302,7 +302,7 @@ body {
 /* ─── Dashboard Layout ──────────────────────────────────────── */
 .dashboard-root {
   display: grid;
-  grid-template-columns: clamp(300px, 28vw, 460px) 1fr;
+  grid-template-columns: clamp(240px, 22vw, 360px) 1fr;
   height: 100vh;
   overflow: hidden;
   background: var(--bg-void);
@@ -311,29 +311,29 @@ body {
 /* Large screens 1400px+ */
 @media (min-width: 1400px) {
   .dashboard-root {
-    grid-template-columns: clamp(420px, 26vw, 500px) 1fr;
+    grid-template-columns: clamp(300px, 20vw, 380px) 1fr;
   }
 }
 
 /* Medium-large screens 1100px–1399px */
 @media (max-width: 1399px) {
   .dashboard-root {
-    grid-template-columns: clamp(280px, 30vw, 420px) 1fr;
+    grid-template-columns: clamp(220px, 22vw, 340px) 1fr;
   }
   .left-panel {
-    padding: 12px;
-    gap: 10px;
+    padding: 10px;
+    gap: 8px;
   }
 }
 
 /* Medium screens 900px–1099px */
 @media (max-width: 1099px) {
   .dashboard-root {
-    grid-template-columns: clamp(240px, 32vw, 360px) 1fr;
+    grid-template-columns: clamp(200px, 24vw, 300px) 1fr;
   }
   .left-panel {
-    padding: 10px;
-    gap: 8px;
+    padding: 8px;
+    gap: 6px;
   }
 }
 
@@ -354,7 +354,7 @@ body {
     border-bottom: 1px solid var(--border-glass);
     max-height: none;
     overflow-y: visible;
-    padding: 12px;
+    padding: 10px;
   }
   .right-panel {
     height: 60vh;
