@@ -176,6 +176,7 @@ export function runOrbitAnalysis(
       period_min: Math.round(elements.period * 10) / 10,
       eccentricity: Math.round(elements.eccentricity * 10000) / 10000,
       objectType: debris.type,
+      noradId: debris.tle1.substring(2, 7).trim(),
       relativeVelocity_kms: Math.round(relativeVelocity * 100) / 100,
       distanceOverTime,
     };

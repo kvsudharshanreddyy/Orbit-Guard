@@ -24,6 +24,7 @@ export interface ClosestApproachResult {
   period_min: number;
   eccentricity: number;
   objectType: 'Rocket Body' | 'Dead Satellite' | 'Fragment';
+  noradId?: string;
   relativeVelocity_kms: number;
   distanceOverTime: { time: number; distance: number }[];
 }
