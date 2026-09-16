@@ -377,10 +377,12 @@ body {
   gap: 14px;
   padding: 16px;
   overflow-y: auto;
+  overflow-x: hidden;
   border-right: 1px solid var(--border-glass);
   background: rgba(0, 0, 0, 0.5);
   position: relative;
   z-index: 1;
+  min-height: 0;
 }
 
 .right-panel {

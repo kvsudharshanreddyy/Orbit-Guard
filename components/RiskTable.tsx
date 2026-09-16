@@ -65,7 +65,7 @@ export default function RiskTable({
   });
 
   return (
-    <div className="glass-card" style={{ padding: '16px', overflow: 'hidden' }}>
+    <div className="glass-card" style={{ padding: '16px', overflow: 'hidden', display: 'flex', flexDirection: 'column', maxHeight: 'clamp(280px, 38vh, 480px)' }}>
       {/* Header */}
       <div
         style={{
@@ -159,7 +159,7 @@ export default function RiskTable({
       </div>
 
       {/* Rows */}
-      <div style={{ maxHeight: 340, overflowY: 'auto', paddingRight: 2 }}>
+      <div style={{ flex: 1, overflowY: 'auto', paddingRight: 2, minHeight: 0 }}>
         <AnimatePresence>
           {filtered.map((result, i) => {
             const color = RISK_COLORS[result.riskLevel];
